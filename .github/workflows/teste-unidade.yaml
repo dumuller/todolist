@@ -2,7 +2,7 @@ name: Teste de unidade Java
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   teste-unidade:
