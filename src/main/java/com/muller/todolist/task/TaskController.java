@@ -40,7 +40,7 @@ public class TaskController {
 
     @PutMapping("/{id}")
     public ResponseEntity putTasks(@RequestBody TaskModel taskModel, HttpServletRequest request, @PathVariable UUID id) {
-        Optional<TaskModel> taskParaAtualizar = taskRepository.findById(id);
+        //Optional<TaskModel> taskParaAtualizar = taskRepository.findById(id);
 
         if (!taskParaAtualizar.isPresent())
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Id inválido");
